@@ -1,8 +1,4 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
+// @flow
 
 import React, { Component } from 'react';
 import {
@@ -19,7 +15,10 @@ const instructions = Platform.select({
     'Shake or press menu button for dev menu',
 });
 
-export default class App extends Component<{}> {
+type Props = {}
+type State = {}
+
+export default class App extends Component<Props, State> {
   render() {
     return (
       <View style={styles.container}>
